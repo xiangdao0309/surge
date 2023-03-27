@@ -1,0 +1,13 @@
+#!name=❏ 脚本合集
+#!desc=最后更新时间 2023-03-27 22:22
+#!system=ios
+#根据群里大佬的仿写
+
+[Script]
+
+http-response ^https:\/\/account\.wps\.cn\/api\/users\/\d+\/overview requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/WPSOffice.js
+http-response ^https:\/\/vas\.wps\.cn\/query\/api\/v\d\/list_purchase_info requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/WPSOffice.js
+
+[MITM]
+hostname = *account.wps.cn, *account.wps.com
+
