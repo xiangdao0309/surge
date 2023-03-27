@@ -1,5 +1,7 @@
 /*
 
+以下是QuanX的脚本
+
 [rewrite_local]
 
 # > Old
