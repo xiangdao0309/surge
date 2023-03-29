@@ -1,5 +1,5 @@
-#!name=❏ 脚本合集
-#!desc=最后更新时间 2023-03-01 16:22
+#!name=合集修改
+#!desc=最后更新时间 2023-03-29 16:22
 #!system=ios
 #根据群里大佬的合集筛选
 
@@ -24,11 +24,6 @@ PROCESS-NAME,/System/Library/PrivateFrameworks/Lookup.framework/Versions/A/XPCSe
 DOMAIN,lookup-api.apple.com,𝗣𝗥𝗢𝗫𝗬
 DOMAIN,lookup-api.apple.com.edgekey.net,𝗣𝗥𝗢𝗫𝗬
 DOMAIN,e16991.b.akamaiedge.net,𝗣𝗥𝗢𝗫𝗬
-# 慧车天下 去广告修正
-URL-REGEX,api-access.pangolin-sdk-toutiao.com,REJECT-NO-DROP
-# > 小豚当家 去开屏
-DOMAIN,advertise.zhiduodev.com,REJECT
-DOMAIN,api.zhiduodev.com,REJECT
 # > VSCO 代理
 DOMAIN,measurement.com,𝗣𝗥𝗢𝗫𝗬
 # > 555电影网
@@ -37,11 +32,6 @@ DOMAIN,www.o8tv.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN,dsxys.pro,𝗗𝗜𝗥𝗘𝗖𝗧
 # > Safari 防跳转
 DOMAIN,app-site-association.cdn-apple.com,REJECT
-# > 机场网站 代理
-DOMAIN-SUFFIX,dlercloud.com,𝗣𝗥𝗢𝗫𝗬
-DOMAIN,zhuan.mlsao.xyz,𝗣𝗥𝗢𝗫𝗬
-# > Passkey
-DOMAIN,ql.lowking.pro,服务器 01
 # > 爱奇艺 去广告
 DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
 # > 优酷 去广告
@@ -60,15 +50,11 @@ OR,((DOMAIN,pgdt.gtimg.cn), (AND,((USER-AGENT,live4iphoneRel*), (IP-CIDR,0.0.0.0
 URL-REGEX,^https?:\/\/ih2\.ireader\.com\/zyapi\/bookstore\/ad\/,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/ih2\.ireader\.com\/zyapi\/self\/screen\/ad,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/ih2\.ireader\.com\/zycl\/api\/ad\/,REJECT-TINYGIF
-# > 作业帮 去广告
-URL-REGEX,^https:\/\/syh\.zybang\.com\/com\/adx\/impress$,REJECT-TINYGIF
 # > HDOBOX 去广告
 DOMAIN-SUFFIX,applovin.com,REJECT
 DOMAIN-SUFFIX,applvn.com,REJECT
 # > 交管12123 去广告
 URL-REGEX,^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$,REJECT
-# > 小米运动 去广告 
-URL-REGEX,^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad,REJECT
 # > 京东极速版 去广告
 URL-REGEX,https://api.m.jd.com/client.action\?functionId=lite_advertising,REJECT
 # > 京东金融 去广告
@@ -95,8 +81,6 @@ URL-REGEX,^https:\/\/img-ys011\.didistatic\.com\/static,REJECT
 URL-REGEX,^https:\/\/pt-starimg\.didistatic\.com\/static,REJECT
 # > 云闪付 去广告
 URL-REGEX,^https:\/\/wallet\.95516\.com\/s\/wl\/icon\/long,REJECT
-# > 狮桥司机 去广告
-URL-REGEX,^https:\/\/api-daoshang\.shiqiao\.com\/cloud-common\/(startupPageNew|versionManger)\/(query$|isUpdate$),REJECT
 # > 威锋 去广告
 URL-REGEX,^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/(infoCenterAd|yesList),REJECT
 # > 向日葵 去广告
@@ -120,11 +104,6 @@ URL-REGEX,^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg,REJECT
 URL-REGEX,^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp,REJECT
 # > 中国联通 去开屏
 DOMAIN-SUFFIX,m1.ad.10010.com,REJECT
-# > 中国电信 去开屏
-DOMAIN,ad.21cn.com,REJECT
-DOMAIN,ad.k.21cn.com,REJECT
-DOMAIN,admarket.21cn.com,REJECT
-DOMAIN,adshows.21cn.com,REJECT
 # > 顺丰速运 去开屏
 URL-REGEX,^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/appVersion\/detectionUpgrade,REJECT
 URL-REGEX,^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/,REJECT
